@@ -3,7 +3,7 @@ package com.yahoo.rw.solutions;
 /*
  * Name : ReaderWriterInterface.java
  * Author : knar@
- * Methods : reader and writer
+ * Methods : reader and writer methods to be implemented..
  * 
  */
 
