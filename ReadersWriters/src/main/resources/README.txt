@@ -1,13 +1,36 @@
-Scenario : 
-----------
+Problem  :
+-----------
 
-Readers try to read the schedule of a flight named "Flight-1" while
-Writers try to modify this flight's schedule. 
-A Hashmap with flight names as keys and schedules as values are initialized. For simplicity purpose, the Reader and 
-Writer Threads in the code are made to read and update the schedule of 
-only 1 flight which is Flight-1. 
-In reality, multiple readers and writers try to read and write schedules
-of all the flights.
+Readers Writers Problem : http://en.wikipedia.org/wiki/Readers-writers_problem
+
+Scenario : 
+---------- 
+
+Readers try to read the schedule of a flight named "Flight-1" while Writers try to modify this flight's schedule. 
+A Hashmap with flight names as keys and schedules as values are initialized. 
+For simplicity purpose, the Reader and Writer Threads in the code are made to read and update the schedule of 
+only 1 flight which is Flight-1. Semaphore & ReentrantReadWriteLock class of Java is used to implement the solutions. 
+
+In reality, multiple readers and writers try to read and write schedules of all the flights and low level synchronization primitives 
+like Semaphores etc.. are not used. Instead the Application itself stores data in an RDBMS like Oracle 
+which helps in concurrent transactions automatically. The application needn't bother to write the locking mechanism. 
+Oracle never blocks reads. By a method of SCN and rollback/undo, it provides consistent Reads at any point in time. 
+Multiple Writes are prevented using Row-Level Locks.
+
+Packages :
+-----------
+
+ReadersWriters Project contains 2 packages : 
+
+src/main/java : 
+
+com.yahoo.rw.solutions - Solutions to all 3 readers writers problem.
+com.yahoo.rw.train.application - A small train reservation program. 
+
+src/test/java :
+
+com.yahoo.rw.solutions - Driver to run all 3 readers writers solutions..
+com.yahoo.rw.train.application - Driver to run the Train application.
 
 
 First Readers Writers Solution

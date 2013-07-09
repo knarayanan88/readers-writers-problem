@@ -4,6 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Semaphore;
 
+/*
+ * 
+ * Name : SecondReadersWriterSolution.java
+ * Author : knar@
+ * Description : Overrides the reader and writer abstract methods of ReadersWriterInterface
+ * Refer to src/main/resources for more information on the input and output
+ * 
+ */
+
 public class SecondReadersWriterSolution implements ReadersWriterInterface {
 
 	private Semaphore write;

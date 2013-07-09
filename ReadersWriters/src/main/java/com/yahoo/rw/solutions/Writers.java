@@ -2,6 +2,13 @@ package com.yahoo.rw.solutions;
 
 import java.util.Date;
 
+/*
+ * Name : Writers.java
+ * Author : knar@
+ * Description : Writers - Runnable that updates the schedule of a flight which is passed as parameter.
+ * 
+ */
+
 class Writers implements Runnable {
 	private ReadersWriterInterface obj;
 	private String flight;

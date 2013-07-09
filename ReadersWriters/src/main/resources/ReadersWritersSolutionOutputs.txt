@@ -135,3 +135,78 @@ Schedule for Flight-1 is :104 read by Thread-13
 Schedule for Flight-1 is :104 read by Thread-14
 Completed...
 
+4. ReentrantRWLock Solution Output : 
+-------------------------------------
+
+W R W R R R R R W R W W R R R 
+
+Started Writer Thread : Thread-0 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-1 at Tue Jul 09 23:22:13 IST 2013
+Started Writer Thread : Thread-2 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-3 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-4 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-5 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-6 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-7 at Tue Jul 09 23:22:13 IST 2013
+Started Writer Thread : Thread-8 at Tue Jul 09 23:22:13 IST 2013
+Started Reader Thread : Thread-9 at Tue Jul 09 23:22:14 IST 2013
+Started Writer Thread : Thread-10 at Tue Jul 09 23:22:14 IST 2013
+Set for Flight-1 time: 100 by Writer Thread: Thread-0
+Started Writer Thread : Thread-11 at Tue Jul 09 23:22:14 IST 2013
+Started Reader Thread : Thread-12 at Tue Jul 09 23:22:14 IST 2013
+Started Reader Thread : Thread-13 at Tue Jul 09 23:22:14 IST 2013
+Started Reader Thread : Thread-14 at Tue Jul 09 23:22:14 IST 2013
+Schedule for Flight-1 is :100 read by Thread-1
+Set for Flight-1 time: 101 by Writer Thread: Thread-2
+Schedule for Flight-1 is :101 read by Thread-3
+Schedule for Flight-1 is :101 read by Thread-6
+Schedule for Flight-1 is :101 read by Thread-4
+Schedule for Flight-1 is :101 read by Thread-5
+Schedule for Flight-1 is :101 read by Thread-7
+Set for Flight-1 time: 102 by Writer Thread: Thread-8
+Schedule for Flight-1 is :102 read by Thread-9
+Set for Flight-1 time: 103 by Writer Thread: Thread-10
+Set for Flight-1 time: 104 by Writer Thread: Thread-11
+Schedule for Flight-1 is :104 read by Thread-12
+Schedule for Flight-1 is :104 read by Thread-13
+Schedule for Flight-1 is :104 read by Thread-14
+Completed...
+
+
+5. Train Reservation Example Output : 
+--------------------------------------
+
+Started Reader Thread : Thread-0
+Started Writer-Reserve Thread : Thread-1
+Started Writer-Reserve Thread : Thread-2
+Started Reader Thread : Thread-3
+Started Reader Thread : Thread-4
+Started Writer-Cancel Thread : Thread-5
+Started Reader Thread : Thread-6
+Started Reader Thread : Thread-7
+Started Writer-Reserve Thread : Thread-8
+Started Writer-Reserve Thread : Thread-9
+Thread Thread-0: Remaining Seats at 1373392424237 :10
+Started Reader Thread : Thread-10
+Thread Thread-1: Booked 2 seats..Remaining Seats: 8
+Started Reader Thread : Thread-11
+Thread Thread-2: Booked 3 seats..Remaining Seats: 5
+Started Writer-Cancel Thread : Thread-12
+Started Writer-Reserve Thread : Thread-13
+Thread Thread-3: Remaining Seats at 1373392424540 :5
+Thread Thread-4: Remaining Seats at 1373392424638 :5
+Started Reader Thread : Thread-14
+Thread :Thread-5 Cancelled 1 Ticket. Remaining Seats: 6
+Started Writer-Reserve Thread : Thread-15
+Started Reader Thread : Thread-16
+Thread Thread-6: Remaining Seats at 1373392424839 :6
+Thread Thread-7: Remaining Seats at 1373392424939 :6
+Thread Thread-8: Booked 1 seats..Remaining Seats: 5
+Thread Thread-9: Booked 2 seats..Remaining Seats: 3
+Thread Thread-10: Remaining Seats at 1373392425239 :3
+Thread Thread-11: Remaining Seats at 1373392425339 :3
+Thread :Thread-12 Cancelled 1 Ticket. Remaining Seats: 4
+Thread Thread-13: Booked 4 seats..Remaining Seats: 0
+Thread Thread-14: Remaining Seats at 1373392425639 :0
+Thread Thread-15 No Seats Available to Book..
+Thread Thread-16: Remaining Seats at 1373392425838 :0

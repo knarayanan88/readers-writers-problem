@@ -2,6 +2,14 @@ package com.yahoo.rw.solutions;
 
 import java.util.Date;
 
+/*
+ * Name : Readers.java
+ * Author : knar@
+ * Description : Readers - Runnable that reads the schedule of a flight which is passed as parameter.
+ * 
+ */
+
+
 class Readers implements Runnable {
 	private ReadersWriterInterface obj;
 	private String flight;

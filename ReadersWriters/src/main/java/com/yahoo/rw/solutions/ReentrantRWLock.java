@@ -6,6 +6,15 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+/*
+ * 
+ * Name : ReentrantRWLock.java
+ * Author : knar@
+ * Description : Overrides the reader and writer abstract methods of ReadersWriterInterface
+ * Refer to src/main/resources for more information on the input and output
+ * 
+ */
+
 public class ReentrantRWLock implements ReadersWriterInterface {
 
 	private Map<String, Integer> schedules;

@@ -4,6 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Semaphore;
 
+/*
+ * Name : FirstReadersWriterSolution.java
+ * Author : knar@
+ * Description : Overrides the reader and writer abstract methods of ReadersWriterInterface
+ * Refer to src/main/resources for more information on the input and output
+ * 
+ */
+
 public class FirstReadersWriterSolution implements ReadersWriterInterface {
 
 	private Semaphore write;
