@@ -1,0 +1,137 @@
+--Readers Writer Problem - Solutions 
+
+1. First Readers Writers Solution Output : 
+-------------------------------------------
+
+W R R R R R R R R R R W W W W 
+
+Started Writer Thread : Thread-0 at Tue Jul 09 20:05:20 IST 2013
+Started Reader Thread : Thread-1 at Tue Jul 09 20:05:20 IST 2013
+Started Writer Thread : Thread-2 at Tue Jul 09 20:05:20 IST 2013
+Started Reader Thread : Thread-3 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-4 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-5 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-6 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-7 at Tue Jul 09 20:05:21 IST 2013
+Started Writer Thread : Thread-8 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-9 at Tue Jul 09 20:05:21 IST 2013
+Started Writer Thread : Thread-10 at Tue Jul 09 20:05:21 IST 2013
+Set for Flight-1 time: 100 by Writer Thread: Thread-0
+There are 4 waiting Threads on the write semaphore during writing 
+Started Writer Thread : Thread-11 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-12 at Tue Jul 09 20:05:21 IST 2013
+Started Reader Thread : Thread-13 at Tue Jul 09 20:05:22 IST 2013
+Started Reader Thread : Thread-14 at Tue Jul 09 20:05:22 IST 2013
+Schedule for Flight-1 is :100 read by Thread-1
+Schedule for Flight-1 is :100 read by Thread-3
+Schedule for Flight-1 is :100 read by Thread-6
+Schedule for Flight-1 is :100 read by Thread-9
+Schedule for Flight-1 is :100 read by Thread-7
+Schedule for Flight-1 is :100 read by Thread-4
+Schedule for Flight-1 is :100 read by Thread-5
+Schedule for Flight-1 is :100 read by Thread-12
+Schedule for Flight-1 is :100 read by Thread-13
+Schedule for Flight-1 is :100 read by Thread-14
+There are 4 waiting Threads on the write semaphore during reading 
+Set for Flight-1 time: 101 by Writer Thread: Thread-2
+There are 3 waiting Threads on the write semaphore during writing 
+Set for Flight-1 time: 102 by Writer Thread: Thread-8
+There are 2 waiting Threads on the write semaphore during writing 
+Set for Flight-1 time: 103 by Writer Thread: Thread-10
+There are 1 waiting Threads on the write semaphore during writing 
+Set for Flight-1 time: 104 by Writer Thread: Thread-11
+Completed...
+
+
+2. Second Readers Writers Solution Output : 
+--------------------------------------------
+
+W W W W W R R R R R R R R R R 
+
+Started Writer Thread : Thread-0 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-1 at Tue Jul 09 20:07:58 IST 2013
+Started Writer Thread : Thread-2 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-3 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-4 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-5 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-6 at Tue Jul 09 20:07:58 IST 2013
+Started Reader Thread : Thread-7 at Tue Jul 09 20:07:58 IST 2013
+Started Writer Thread : Thread-8 at Tue Jul 09 20:07:59 IST 2013
+Started Reader Thread : Thread-9 at Tue Jul 09 20:07:59 IST 2013
+Started Writer Thread : Thread-10 at Tue Jul 09 20:07:59 IST 2013
+Set for Flight-1 time: 100 by Writer Thread: Thread-0
+There are 3 waiting Threads on the write semaphore during writing
+Started Writer Thread : Thread-11 at Tue Jul 09 20:07:59 IST 2013
+Started Reader Thread : Thread-12 at Tue Jul 09 20:07:59 IST 2013
+Started Reader Thread : Thread-13 at Tue Jul 09 20:07:59 IST 2013
+Started Reader Thread : Thread-14 at Tue Jul 09 20:07:59 IST 2013
+Set for Flight-1 time: 101 by Writer Thread: Thread-2
+There are 3 waiting Threads on the write semaphore during writing
+Set for Flight-1 time: 102 by Writer Thread: Thread-8
+There are 2 waiting Threads on the write semaphore during writing
+Set for Flight-1 time: 103 by Writer Thread: Thread-10
+There are 1 waiting Threads on the write semaphore during writing
+Set for Flight-1 time: 104 by Writer Thread: Thread-11
+Schedule for Flight-1 is :104 read by Thread-3
+Schedule for Flight-1 is :104 read by Thread-6
+Schedule for Flight-1 is :104 read by Thread-4
+Schedule for Flight-1 is :104 read by Thread-5
+Schedule for Flight-1 is :104 read by Thread-12
+Schedule for Flight-1 is :104 read by Thread-7
+Schedule for Flight-1 is :104 read by Thread-9
+Schedule for Flight-1 is :104 read by Thread-13
+Schedule for Flight-1 is :104 read by Thread-1
+Schedule for Flight-1 is :104 read by Thread-14
+Completed...
+
+
+3. Third Readers Writers Solution Output : 
+-------------------------------------------
+
+W R W R R R R R W R W W R R R 
+
+Started Writer Thread : Thread-0 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-1 at Tue Jul 09 20:09:59 IST 2013
+Started Writer Thread : Thread-2 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-3 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-4 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-5 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-6 at Tue Jul 09 20:09:59 IST 2013
+Started Reader Thread : Thread-7 at Tue Jul 09 20:09:59 IST 2013
+Started Writer Thread : Thread-8 at Tue Jul 09 20:10:00 IST 2013
+Started Reader Thread : Thread-9 at Tue Jul 09 20:10:00 IST 2013
+Started Writer Thread : Thread-10 at Tue Jul 09 20:10:00 IST 2013
+Set for Flight-1 time: 100 by Writer Thread: Thread-0
+There are 9 waiting Threads on the orderMutex semaphore during reading 
+Started Writer Thread : Thread-11 at Tue Jul 09 20:10:00 IST 2013
+Started Reader Thread : Thread-12 at Tue Jul 09 20:10:00 IST 2013
+Started Reader Thread : Thread-13 at Tue Jul 09 20:10:00 IST 2013
+Started Reader Thread : Thread-14 at Tue Jul 09 20:10:00 IST 2013
+Schedule for Flight-1 is :100 read by Thread-1
+There are 12 waiting Threads on the orderMutex semaphore during writing 
+Set for Flight-1 time: 101 by Writer Thread: Thread-2
+There are 11 waiting Threads on the orderMutex semaphore during reading 
+There are 10 waiting Threads on the orderMutex semaphore during reading 
+There are 9 waiting Threads on the orderMutex semaphore during reading 
+There are 8 waiting Threads on the orderMutex semaphore during reading 
+There are 7 waiting Threads on the orderMutex semaphore during reading 
+Schedule for Flight-1 is :101 read by Thread-3
+Schedule for Flight-1 is :101 read by Thread-6
+Schedule for Flight-1 is :101 read by Thread-5
+Schedule for Flight-1 is :101 read by Thread-4
+Schedule for Flight-1 is :101 read by Thread-7
+There are 6 waiting Threads on the orderMutex semaphore during writing 
+Set for Flight-1 time: 102 by Writer Thread: Thread-8
+There are 5 waiting Threads on the orderMutex semaphore during reading 
+Schedule for Flight-1 is :102 read by Thread-9
+There are 4 waiting Threads on the orderMutex semaphore during writing 
+Set for Flight-1 time: 103 by Writer Thread: Thread-10
+There are 3 waiting Threads on the orderMutex semaphore during writing 
+Set for Flight-1 time: 104 by Writer Thread: Thread-11
+There are 2 waiting Threads on the orderMutex semaphore during reading 
+There are 1 waiting Threads on the orderMutex semaphore during reading 
+Schedule for Flight-1 is :104 read by Thread-12
+Schedule for Flight-1 is :104 read by Thread-13
+Schedule for Flight-1 is :104 read by Thread-14
+Completed...
+
