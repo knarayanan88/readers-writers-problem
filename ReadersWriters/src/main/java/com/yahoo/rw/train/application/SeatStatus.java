@@ -2,6 +2,13 @@ package com.yahoo.rw.train.application;
 
 import java.util.Date;
 
+/*
+ * Name : SeatStatus.java
+ * Author : knar@
+ * Description : Reader Thread that returns the number of available seats.
+ * 
+ */
+
 class SeatStatus implements Runnable {
 	private Train t = new Train();
 

@@ -1,5 +1,12 @@
 package com.yahoo.rw.train.application;
 
+/*
+ * Name : SeatReserve.java
+ * Author : knar@
+ * Description : Writer Thread that takes num of seats to Reserve and reduces the available/remaining seat shared variable.
+ * 
+ */
+
 class SeatReserve implements Runnable {
 	private Train t = new Train();
 	private int numOfSeatsToBook;

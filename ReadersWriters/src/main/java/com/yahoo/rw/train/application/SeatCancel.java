@@ -1,5 +1,12 @@
 package com.yahoo.rw.train.application;
 
+/*
+ * Name : SeatCancel.java
+ * Author : knar@
+ * Description : Writer Thread that takes num of seats to cancel and adds to the available/remaining seat shared variable.
+ * 
+ */
+
 class SeatCancel implements Runnable {
 	
 	private Train tr = new Train();

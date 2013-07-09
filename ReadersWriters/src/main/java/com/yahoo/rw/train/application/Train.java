@@ -4,6 +4,13 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+/*
+ * Name : Train.java.
+ * Author : knar@
+ * Description : Has 3 methods : getRemainingSeats, bookTickets and cancelTickets.
+ * 
+ */
+
 public class Train {
 
 	private static final int TOTALSEATS = 10;
