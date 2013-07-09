@@ -4,6 +4,16 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
+
+/*
+ * 
+ * Name : ThirdReadersWriterTest.java
+ * Author : knar@
+ * Description : Driver class to test the execution of ThirdReadersWriterSolution.java 
+ * Refer to src/main/resources/README.txt for more information on the input and output
+ * 
+ */
+
 public class ThirdReadersWriterTest extends TestCase {
 
 	ThirdReadersWriterSolution f1 = new ThirdReadersWriterSolution();

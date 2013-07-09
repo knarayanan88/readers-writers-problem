@@ -2,6 +2,15 @@ package com.yahoo.rw.solutions;
 
 import org.junit.Test;
 
+/*
+ * 
+ * Name : SecondReadersWriterTest.java
+ * Author : knar@
+ * Description : Driver class to test the execution of SecondReadersWriterSolution.java 
+ * Refer to src/main/resources/README.txt for more information on the input and output
+ * 
+ */
+
 public class SecondReadersWriterTest {
 
 	SecondReadersWriterSolution f1 = new SecondReadersWriterSolution();

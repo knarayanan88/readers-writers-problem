@@ -4,6 +4,14 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
+/*
+ * 
+ * Name : FirstReadersWriterTest.java
+ * Author : knar@
+ * Description : Driver class to test the execution of FirstReadersWriter.java 
+ * Refer to src/main/resources/README.txt for more information on the input and output
+ * 
+ */
 
 public class FirstReadersWriterTest extends TestCase {
 
