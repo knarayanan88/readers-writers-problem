@@ -17,7 +17,7 @@ public class SecondReadersWriterSolution implements ReadersWriterInterface {
 
 	private Semaphore write;
 	private Semaphore read;
-	private Semaphore mutex1, mutex2;
+	private Semaphore mutex1, mutex2, mutex3;
 	private int readCount = 0;
 	private int writeCount = 0;
 
@@ -30,6 +30,7 @@ public class SecondReadersWriterSolution implements ReadersWriterInterface {
 		read = new Semaphore(1, true);
 		mutex1 = new Semaphore(1, true);
 		mutex2 = new Semaphore(1, true);
+		mutex3 = new Semaphore(1, true);
 		schedules = new HashMap<String, Integer>();
 
 		fillMapWithInitialSchedules();
@@ -84,6 +85,8 @@ public class SecondReadersWriterSolution implements ReadersWriterInterface {
 	}
 
 	public void reader(String flight) throws InterruptedException {
+		
+		mutex3.acquire();
 		read.acquire();
 		mutex2.acquire();
 
@@ -91,8 +94,9 @@ public class SecondReadersWriterSolution implements ReadersWriterInterface {
 		if (readCount == 1) {
 			write.acquire();
 		}
-		read.release();
 		mutex2.release();
+		read.release();
+		mutex3.release();
 
 		// Read the schedules...
 
